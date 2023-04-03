@@ -1,0 +1,586 @@
+{
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 2,
+  "name": "AELife-1.1.5",
+  "version": "1.1.5",
+  "author": "LyceenAiro",
+  "description": "BUG反馈 QQ:1534012710\n整合发布  Q群:816077685\nMC百科   ID:艾罗(297494)\nBilibili     UID13406484",
+  "fileApi": "",
+  "url": "",
+  "forceUpdate": false,
+  "origin": [],
+  "addons": [
+    {
+      "id": "game",
+      "version": "1.18.2"
+    },
+    {
+      "id": "forge",
+      "version": "40.1.73"
+    }
+  ],
+  "libraries": [],
+  "files": [
+    {
+      "path": "config/ae2ao.toml",
+      "hash": "e67f0cc0c0c1ac2d07ad45bd8c58154bafe25bc4",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/appliedenergistics2/client.json",
+      "hash": "f2562f1e544c7538a4e4e093a418b2ff682b716e",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/fallingtree.json",
+      "hash": "5bcf604966f0bca2f06cd447cb3fc9125078b1be",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/inventoryprofilesnext/integrationHints/exampleIntegrationHints.json",
+      "hash": "2bedb4d58a778b937dd9da01c50a46af9887709b",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/inventoryprofilesnext/inventoryprofiles.json",
+      "hash": "b1e91f4eaec71ac6959865b07f63d46d44027382",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/lazierae2-common.toml",
+      "hash": "8684bc096822329c72785a675e492a03a5b757be",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/rubidium_extras.toml",
+      "hash": "982ca4a6e2cfa672abef40e8be9fc3c7c806a324",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/solarflux/custom_panels.js",
+      "hash": "8329b09bd7a028c7839af0337d6f855b011c9fb3",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/solarflux/main.hlc",
+      "hash": "d7e2f4536b5eda1b706c576b80296f616c69744e",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/solarflux/recipes.hlc",
+      "hash": "2b21b9dc62e416d2380f2b7e8307a913d6f36079",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/solarflux/textures/blocks/example_base.png",
+      "hash": "4253410bb179c1e213f766d5a5bdd59ba577dbf0",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/solarflux/textures/blocks/example_top.png",
+      "hash": "6ab5811e071c15559234ec0b9d961a10bf4fc7ec",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/solarflux/textures/items/example.png",
+      "hash": "b540d3d2cfc256d86599b731b6141d97f5ddbcf3",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/xaerominimap.txt",
+      "hash": "a0af37e4bc8e2ef318e9a9c26d922d35fe5f20a2",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/xaerominimap_entities.json",
+      "hash": "9635daae8b8063d91caae290f63927599bd79698",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/xaeropatreon.txt",
+      "hash": "80846d8687ebeab12e5d0d3a6579675d900cee5a",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "config/xaeroworldmap.txt",
+      "hash": "0f5e42974f0e3370f13eb01310704374af38ddbf",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "datever/bug\u0026program.txt",
+      "hash": "bb539e44a6dd5fb7f24280e34d140de32927ba2d",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "datever/update.txt",
+      "hash": "47f60768929b6b67edc1f123d77a559c7a671724",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "datever/ver.txt",
+      "hash": "7d4194c99ac36fdcca8ac5715309b77200c85e0a",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "defaultconfigs/fluxnetworks-server.toml",
+      "hash": "0be7cc07f7f1e617742d8442731d532b3f07b801",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/ae2ao-6.0.0-1.18.1.jar",
+      "hash": "9d36f38c58c2cb03f5f96c236963850a0f429733",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/AmbientSounds_FORGE_v5.0.16_mc1.18.2.jar",
+      "hash": "2adaa906cb2d87becde7c71680ad060c8d29d93a",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/appliedenergistics2-11.1.6 .jar",
+      "hash": "cc5f237f7419f70f1648c47902aea6a5ab5dd887",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/balm-3.2.0+0.jar",
+      "hash": "cb9c82f12842299dcd7eea9cff036fc464bbd52d",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/BetterAdvancements-1.18.2-0.1.2.125.jar",
+      "hash": "bcc17b2ca1532ac6faf9928888cf29b6d275d1ba",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/BetterPingDisplay-1.18.2-1.1.jar",
+      "hash": "9c2df44339046b5194f68378b4f0c45a2a7e3337",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/biggerreactors-1.18.2-0.6.0-beta.1.3.jar",
+      "hash": "3ed488a435fc93da33ba9018013ecdf367f38f58",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/cfm-7.0.0-pre29-1.18.2.jar",
+      "hash": "7e0196019192f7853180efdf90e2a562734125df",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/chunkloaders-1.2.1-forge-mc1.18.jar",
+      "hash": "9d240306519b089c50877d9df1e98882dfbebc02",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/cloth-config-6.2.62-forge.jar",
+      "hash": "1da6c984afef261cd5484ede8685abfe5242198b",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/configured-1.5.3-1.18.2.jar",
+      "hash": "c6be107c43666391ea5e25e847df2b96c2230bc3",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/CooperativeAdvancements-1.18.2-1.2.3.jar",
+      "hash": "13fee4e1acddc153f5b214a96b44710402f79cc3",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/CraftTweaker-forge-1.18.2-9.1.185.jar",
+      "hash": "0423cef3309dddb1c84c007f9ee73038d0653b51",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/CreativeCore_FORGE_v2.6.12_mc1.18.2.jar",
+      "hash": "18cdd10beeb66ec662593d4670d6e0c709ed3f4b",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/CTM-1.18.2-1.1.4 4.jar",
+      "hash": "217b3c751aa14ed1cd2a34f7686ab2673445fb4c",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/elevatorid-1.18.2-1.8.4.jar",
+      "hash": "c32376d6741c1f8ec4ed637bb55e070c3ad3200e",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/Entity_Collision_FPS_Fix-forge-1.18.2-1.0.0.jar",
+      "hash": "c816bd18177d52a96a59f6e51072ff1847d0f971",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/FallingTree-1.18.2-3.5.3.jar",
+      "hash": "7cc895a0473010e515a284f0d8914b423837bbda",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/farsight-1.18.2-1.9.jar",
+      "hash": "a45bed30998e441e561f960234e484c7f9fe39ae",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/ferritecore-4.2.1-forge.jar",
+      "hash": "ba3071bf50a8ffae349b7eca514415014e939267",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/FluxNetworks-1.18.2-7.0.7.8.jar",
+      "hash": "965fa6590280f948ef989127723773a5e8de7965",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/HammerLib-1.18.2-18.2.16.jar",
+      "hash": "09e0814f298307e9bf51dd008356cd0cb3b101d1",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/Iceberg-1.18.2-1.0.44.jar",
+      "hash": "db978343d404f2d43158fb2b5fbcd2d6004859fd",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/InventoryProfilesNext-forge-1.18.2-1.6.4.jar",
+      "hash": "551de872789f608a9e6c2d493ecbac6c2a24c72a",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/itemcollectors-1.1.5-mc1.18.jar",
+      "hash": "a57ed02fbd755b3b64ea868df257285a02924dff",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/ItemPhysicLite_v1.4.8_mc1.18.jar",
+      "hash": "2546e5ae4ffa96a22309e5321173142d1f79c8ef",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/Jade-1.18.2-forge-5.2.3.jar",
+      "hash": "302909c4bbac17744471dd8f8bc083385658aa8e",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/JadeAddons-1.18.2-2.4.0.jar",
+      "hash": "a398bb72103edddb73e6caf7b484b4cd281bfd00",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/jei-1.18.2-forge-10.1.3.240.jar",
+      "hash": "ace1e1c89185ad454f87ca8dee389232e19615a5",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/JER-Integration-3.3.1.jar",
+      "hash": "976465632c28eefe9423aba7476a25fd2510d763",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/JustEnoughResources-1.18.2-0.14.1.171.jar",
+      "hash": "50871f1b4902d3248528424eadb8087feae03285",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/keymap-0.6.0-beta.0+1.18.2-forge.jar",
+      "hash": "88e5e4ba7d9eb92cefbe67c20f936d5fd754502b",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/kotlinforforge-3.7.1-obf.jar",
+      "hash": "24c5b311116f279a30d5047668177aa866459acd",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/lazierae2-1.18.2-3.1.2.jar",
+      "hash": "37500c0bb05c78642cf0f362f767b437d64224f6",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/lazydfu-1.0-1.18+.jar",
+      "hash": "069f72997244b57b76c96ac86faa37b1838d52de",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/mcwifipnp-1.5.6-1.18.2-forge.jar",
+      "hash": "1fa85da0e76b77f3340755f93425f7a31f38c7bd",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/ModernUI-1.18.2-3.5.4.113-universal.jar",
+      "hash": "24b6af189e6a7ef999c1bd93b25c48e32336c373",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/MyServerIsCompatible-1.18-1.0.jar",
+      "hash": "455200ac38543e609032a14b86e41ca146e98774",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/oculus-mc1.18.2-1.2.5a.jar",
+      "hash": "45d362192f30c7fcffbf1f1ebaf93293dc84d296",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/phosphophyllite-1.18.2-0.6.0-beta.1.5.jar",
+      "hash": "1ab0592a6ea5a7630ee0413274d33dcd6e3f4eb2",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/plonk-1.18.2-10.0.2.jar",
+      "hash": "0f402a49d316d6d3608fc9fdd77706af5c91a45e",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/quartz-1.18.2-0.0.0-beta.1.3.jar",
+      "hash": "5e4f24d4437f8e6865fbc58cf7b1efa492a63a6f",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/radium-0.7.10.jar",
+      "hash": "5ef8ecf547ceebc4d1e678b6cd2441756e283e48",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/rubidium-0.5.3a.jar",
+      "hash": "eeca1915fb9692e801f7048f78662d96c48112d9",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/RubidiumExtra-1.18.2-0.4.9.26.jar",
+      "hash": "4ceba74f8af13cc04c4eefc56bba73dc1d047f49",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/rubidium_dynamiclights-1.18.2_v1.3.3-i18n.jar",
+      "hash": "f6ab9bce822ba39d8aae9a91e7f0baa6d236c9d3",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/rubidium_extras-1.18.2_v1.3.5-i18n.jar",
+      "hash": "d4f079929d326cbc3c47bca4f4187c9cccb16d3f",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/smoothboot-mc1.18.2-1.0.1.jar",
+      "hash": "31ad696edbd9eb90e46241cacd6c81230b013d79",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/SolarFluxReborn-1.18.2-18.2.4.jar",
+      "hash": "9dadf5344526c6891194b20bbbff2a9dece8ce3e",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/starlight-1.0.2 forge.546ae87.jar",
+      "hash": "c7dde83f5fbc864d85842c74a4433a8a5c0f15b7",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/supermartijn642configlib-1.1.6-forge-mc1.18.jar",
+      "hash": "3ab3caa161f017c7a9ab0cb6f63731e9ef850ef2",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/supermartijn642corelib-1.0.19-forge-mc1.18.jar",
+      "hash": "a09a8d935cfa16daf1a3edf6b920c8d5c2aca9a6",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/textrues_rubidium_options-1.0.3-mc1.18.2.jar",
+      "hash": "23aa0951006b4901a7a45f2ac59f99a1c633ad10",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/torchmaster-18.1.0.jar",
+      "hash": "de042e7bd650f6ee00959cd32b6e53cb12a25413",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/waystones-forge-1.18.2-10.1.0.jar",
+      "hash": "d578157adb139f283cbb0ac1825fc701baf57c9e",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/XaerosWorldMap_1.26.5_Forge_1.18.2.jar",
+      "hash": "6b663faaff96387b174d4f2e4d195dd954ff6da7",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "mods/Xaeros_Minimap_22.13.2_Forge_1.18.2.jar",
+      "hash": "deefe60f96946059ece56ce3a1dd231e354869ee",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "resourcepacks/Minecraft-Mod-Language-Package-1.18.zip",
+      "hash": "e58cff05868045a8b230954a88c485ae47bcc1ca",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "resourcepacks/Rubidium.RubidiumExtraTranslationPack.zip",
+      "hash": "60b3f891348ebf308b1731f3d0cccf4f4124d2bd",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/charger.zs",
+      "hash": "e441b29dcc780d4625743f8729d2e22426c6b7b8",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/cookerores.zs",
+      "hash": "f4be544304c32131d0d8905be2ecf2369221c6eb",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/cookstb.zs",
+      "hash": "11be21643b1ca2bcc6816c4757ef78063b0f24b5",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/cookstrip.zs",
+      "hash": "7ef621d6067e6a38c3f6c64aaae97e6c85b98eb4",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/creatsand.zs",
+      "hash": "f656a9d92a982af8ec27f654fc3a781783d1aa10",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/creatsandplus.zs",
+      "hash": "bcd1e788c1b6bd508efb3a44f778c5473b1a1d04",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/eyes.zs",
+      "hash": "4a09e40238c152ed40cb3c32316661aea3ab4cc1",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/leather.zs",
+      "hash": "fc3beadd953c53276befd522052f7a08d37da846",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/slimeball.zs",
+      "hash": "7520e5d6cd755434c9255652efca7ba8a4147b95",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/solarpower.zs",
+      "hash": "d77e5006264459d11b3d638f4d953327b08c6982",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/uranium.zs",
+      "hash": "250b84dec9b33439b26d15c39b1addeb9f88789a",
+      "force": true,
+      "type": "addon"
+    },
+    {
+      "path": "scripts/uraniumdust.zs",
+      "hash": "3fb14697006f9d571644aaae8cf60bc41c19f7f5",
+      "force": true,
+      "type": "addon"
+    }
+  ],
+  "settings": {
+    "install_mods": true,
+    "install_resourcepack": true
+  },
+  "launchInfo": {
+    "minMemory": 0,
+    "launchArgument": [],
+    "javaArgument": []
+  }
+}

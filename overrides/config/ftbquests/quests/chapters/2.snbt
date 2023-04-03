@@ -1,0 +1,1889 @@
+{
+	id: "5719358C204A5BA9"
+	group: ""
+	order_index: 0
+	filename: "2"
+	title: "应用能源2"
+	icon: "ae2:controller"
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "开采陨石前的准备"
+			x: 5.0d
+			y: -2.0d
+			subtitle: "使用低于钻石等级的工具开采陨石会相当困难"
+			dependencies: ["4F7D1B280F4D5A52"]
+			hide: true
+			id: "1242B9E6D48C1C58"
+			tasks: [{
+				id: "2CFD66FC2E1D31FE"
+				type: "item"
+				item: {
+					id: "minecraft:diamond_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "寻找陨石"
+			x: 5.0d
+			y: 0.0d
+			subtitle: "罗盘会指向最近的陨石"
+			description: ["取得充能的赛特斯石英后你可以制作陨石罗盘来寻找陨石"]
+			dependencies: ["3D56131E2347B3B9"]
+			hide: true
+			id: "4F7D1B280F4D5A52"
+			tasks: [{
+				id: "4CD2F3CD3D6E4720"
+				type: "item"
+				item: "ae2:sky_compass"
+			}]
+		}
+		{
+			title: "寻找模板"
+			icon: "ae2:silicon_press"
+			x: 7.5d
+			y: 0.0d
+			subtitle: "跟随陨石罗盘的指引你可以找到在地表或者埋藏在地底深处的陨石，搜刮位于陨石核心处的箱子可以找到压印模板"
+			description: ["位于核心处的福鲁伊克斯水晶块也可以带走，它是相当不错的材料"]
+			dependencies: ["4F7D1B280F4D5A52"]
+			id: "49D05A0BF186B2F3"
+			tasks: [
+				{
+					id: "7F66BBDA6896229E"
+					type: "item"
+					item: "ae2:silicon_press"
+				}
+				{
+					id: "3BD5174852B14AC0"
+					type: "item"
+					item: "ae2:calculation_processor_press"
+				}
+				{
+					id: "57DBDD451E2E1C88"
+					type: "item"
+					item: "ae2:logic_processor_press"
+				}
+				{
+					id: "200FEE954E0EBA90"
+					type: "item"
+					item: "ae2:engineering_processor_press"
+				}
+			]
+		}
+		{
+			title: "充能石英"
+			x: 2.5d
+			y: 0.0d
+			subtitle: "为你的石英充能"
+			description: [
+				""
+				"取得一个充能的赛特斯石英你需要制作一个充能器来为其充能"
+			]
+			dependencies: ["15C41D8E9A6D77AA"]
+			hide: true
+			id: "3D56131E2347B3B9"
+			tasks: [{
+				id: "480990C5633C67B2"
+				type: "item"
+				item: "ae2:charger"
+			}]
+		}
+		{
+			title: "应用能源起源"
+			icon: "ae2:quartz_ore"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "赛特斯石英水晶是应用能源中重要的材料"
+			id: "15C41D8E9A6D77AA"
+			tasks: [{
+				id: "49C3AFBEA458D94E"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			subtitle: "制作你的第一个压印器"
+			dependencies: ["49D05A0BF186B2F3"]
+			hide: true
+			id: "3AB9E87540E7F5CD"
+			tasks: [{
+				id: "2C2E4A96FEC2EE7F"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+		{
+			title: "最精简的发电"
+			x: 2.5d
+			y: -2.0d
+			subtitle: "只需要往谐振仓放入燃料它就可以进行发电了"
+			dependencies: ["3D56131E2347B3B9"]
+			hide: true
+			id: "5046F50FD0006026"
+			tasks: [{
+				id: "0898599EA424E1D3"
+				type: "item"
+				item: "ae2:vibration_chamber"
+			}]
+		}
+		{
+			title: "更多初级电路"
+			icon: "ae2:printed_engineering_processor"
+			x: 12.5d
+			y: -2.0d
+			dependencies: ["16829B0462A63E6A"]
+			hide: true
+			id: "5DA34B091F3713DA"
+			tasks: [
+				{
+					id: "0F7C1ED3FF67428A"
+					type: "item"
+					item: "ae2:printed_calculation_processor"
+				}
+				{
+					id: "2E64E59F700D9976"
+					type: "item"
+					item: "ae2:printed_engineering_processor"
+				}
+			]
+		}
+		{
+			title: "生态环保"
+			x: 10.0d
+			y: 2.0d
+			shape: "octagon"
+			subtitle: "使用压印器制作镜子"
+			description: ["[通量日光拓展]"]
+			dependencies: ["3AB9E87540E7F5CD"]
+			hide: true
+			id: "2FB21146C2FA94F2"
+			tasks: [{
+				id: "272DE0A891001322"
+				type: "item"
+				item: "solarflux:mirror"
+			}]
+		}
+		{
+			title: "太阳能"
+			x: 10.0d
+			y: 4.0d
+			shape: "octagon"
+			subtitle: "太阳能板可以吸收阳光生产电力"
+			description: [
+				"你可以按照配方制作更高级的太阳能板"
+				"[通量日光拓展]"
+			]
+			dependencies: ["2FB21146C2FA94F2"]
+			hide: true
+			id: "753730BED9A23823"
+			tasks: [{
+				id: "66C554DCF4842A36"
+				type: "item"
+				item: "solarflux:sp_1"
+			}]
+		}
+		{
+			title: "更多高级电路"
+			icon: "ae2:engineering_processor"
+			x: 15.0d
+			y: -2.0d
+			dependencies: ["74F880723099BF0F"]
+			hide: true
+			id: "4C56C07ADA3EBEE8"
+			tasks: [
+				{
+					id: "6C46A1CA6CF70709"
+					type: "item"
+					item: "ae2:calculation_processor"
+				}
+				{
+					id: "1695E6E9E55FF7C9"
+					type: "item"
+					item: "ae2:engineering_processor"
+				}
+			]
+		}
+		{
+			title: "粉碎"
+			x: 10.0d
+			y: -2.0d
+			subtitle: "粉碎任意一种应用能源的石英"
+			description: ["在理想情况下该线路可以无限复制水晶"]
+			dependencies: ["3AB9E87540E7F5CD"]
+			hide: true
+			id: "658B69CD549E1787"
+			tasks: [{
+				id: "271487B6A020ECD1"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
+		}
+		{
+			title: "复制"
+			x: 10.0d
+			y: -4.0d
+			subtitle: "使用石英粉末和沙子可以制作成两份种子"
+			description: ["将种子投入水中即可生长成为一颗石英"]
+			dependencies: ["658B69CD549E1787"]
+			id: "3DCE0782E718DA57"
+			tasks: [{
+				id: "1B1678BBECC20E12"
+				type: "item"
+				item: "ae2:certus_crystal_seed"
+			}]
+		}
+		{
+			title: "加速生长"
+			x: 10.0d
+			y: -6.0d
+			subtitle: "通电加快水晶的生长"
+			description: ["在含有种子的水旁放置晶体催生器并且通入电力即可加块种子的生长速度"]
+			dependencies: ["3DCE0782E718DA57"]
+			hide: true
+			id: "012CA0788A856321"
+			tasks: [{
+				id: "0E44DFDE9D68BC21"
+				type: "item"
+				item: "ae2:quartz_growth_accelerator"
+			}]
+		}
+		{
+			title: "网络连接"
+			icon: "ae2:fluix_glass_cable"
+			x: 2.5d
+			y: -4.0d
+			subtitle: "使用不同的线缆可以实现网络之间的交互"
+			dependencies: ["5046F50FD0006026"]
+			hide: true
+			id: "300D8B53694CEA9F"
+			tasks: [
+				{
+					id: "6AAA09ADE16F5C2D"
+					type: "item"
+					title: "玻璃线缆:使用它来连通网络中的机器以及输送电力，最大可以传输8个频道"
+					item: "ae2:fluix_glass_cable"
+				}
+				{
+					id: "58A9AF7E7EA32CB3"
+					type: "item"
+					title: "石英纤维:仅输送电力，不会和任意线缆进行主动连接"
+					item: "ae2:quartz_fiber"
+				}
+				{
+					id: "18A96A3DCB85E4DA"
+					type: "item"
+					title: "线缆锚:用于隔离线缆或者美化线缆布局"
+					item: "ae2:cable_anchor"
+				}
+			]
+		}
+		{
+			title: "更高级的网络连接"
+			x: 2.5d
+			y: -6.0d
+			subtitle: "信道监控和更大的传输量"
+			description: [
+				"智能线缆:包含有频道数量监控的功能"
+				"包层线缆:不包含频道数量监控的功能"
+			]
+			dependencies: ["300D8B53694CEA9F"]
+			hide: true
+			id: "1DBEED115478D7C3"
+			tasks: [{
+				id: "211F7D05D71A9F27"
+				type: "item"
+				title: "致密线缆:最大可以传输32个频道"
+				item: "ae2:fluix_smart_dense_cable"
+			}]
+		}
+		{
+			title: "量子纠缠"
+			x: 35.0d
+			y: 2.0d
+			subtitle: "将奇点和末影珍珠放在一起爆破就可以分裂奇点"
+			description: ["量子缠绕态奇点一般成对出现，它们每一对都对应着一个量子链接，请妥善管理好你的每一对小奇点"]
+			dependencies: ["1131DA927B955ED8"]
+			hide: true
+			id: "13ABFC0551116A55"
+			tasks: [{
+				id: "5E8E35757E373F68"
+				type: "item"
+				item: "ae2:quantum_entangled_singularity"
+			}]
+		}
+		{
+			x: 25.0d
+			y: -2.0d
+			subtitle: "使用驱动器来批量读取你的磁盘"
+			dependencies: ["66B9593A43B1EE5D"]
+			hide: true
+			id: "3876F653C309D9CA"
+			tasks: [{
+				id: "22CE9AA5BD635ACE"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			title: "磁盘"
+			icon: {
+				id: "ae2:item_storage_cell_1k"
+				Count: 1b
+				tag: { }
+			}
+			x: 17.5d
+			y: 0.0d
+			subtitle: "存储组件和外壳可以制作特定类型的存储元件"
+			dependencies: ["74F880723099BF0F"]
+			hide: true
+			id: "49585104E68D0681"
+			tasks: [
+				{
+					id: "37C00ACC7069D312"
+					type: "item"
+					item: "ae2:cell_component_1k"
+				}
+				{
+					id: "7DD205ADAC2C79A6"
+					type: "item"
+					item: "ae2:item_cell_housing"
+				}
+			]
+		}
+		{
+			title: "流体磁盘"
+			x: 17.5d
+			y: -2.0d
+			subtitle: "使用普通外壳制作的磁盘只能存储物品，用它来合成存储液体的磁盘"
+			dependencies: ["49585104E68D0681"]
+			hide: true
+			id: "62510F433118B560"
+			tasks: [{
+				id: "5B9B58B8A99A980C"
+				type: "item"
+				item: "ae2:fluid_cell_housing"
+			}]
+		}
+		{
+			title: "解构磁盘"
+			x: 16.0d
+			y: 2.0d
+			subtitle: "使用制作或者蹲下右键来解构多余的空磁盘"
+			description: ["其他类型的磁盘和合成存储器也可以这么做"]
+			dependencies: ["49585104E68D0681"]
+			hide: true
+			id: "1635F7636023D891"
+			tasks: [{
+				id: "2F7D58168AF8B170"
+				type: "checkmark"
+				title: "我知道了"
+				icon: "ae2:item_cell_housing"
+			}]
+		}
+		{
+			x: 25.0d
+			y: 0.0d
+			subtitle: "使用便宜的ME箱子来进行单个磁盘的存储"
+			dependencies: ["6B6D7AC4F6A28DB8"]
+			id: "66B9593A43B1EE5D"
+			tasks: [{
+				id: "6426E06F5A7317A3"
+				type: "item"
+				item: "ae2:chest"
+			}]
+		}
+		{
+			title: "高级电路"
+			x: 15.0d
+			y: 0.0d
+			subtitle: "大部分的制作都缺不了它们"
+			dependencies: ["16829B0462A63E6A"]
+			id: "74F880723099BF0F"
+			tasks: [{
+				id: "7FAF22138B43816B"
+				type: "item"
+				item: "ae2:logic_processor"
+			}]
+		}
+		{
+			title: "初级电路"
+			icon: "ae2:printed_logic_processor"
+			x: 12.5d
+			y: 0.0d
+			subtitle: "制作高级电路的材料"
+			dependencies: ["3AB9E87540E7F5CD"]
+			hide: true
+			id: "16829B0462A63E6A"
+			tasks: [
+				{
+					id: "5FCC35B031532FE2"
+					type: "item"
+					item: "ae2:printed_logic_processor"
+				}
+				{
+					id: "49CD09B7B84F63DB"
+					type: "item"
+					item: "ae2:printed_silicon"
+				}
+			]
+		}
+		{
+			title: "超线程"
+			x: 27.5d
+			y: 0.0d
+			subtitle: "获得更多的频道"
+			description: [
+				"在一个没有控制器的网络中，最多只支持8个频道"
+				"在包含控制器的网络中，以控制器为中心延申频道，控制器一个面可以输出32个频道"
+				"控制器最多可以和三个面的其他控制器相连，在默认设置中总体长度不应该大于6个方块"
+				"控制器为蓝色为通电并且工作正常"
+				"控制器为红色为结构错误"
+				"控制器为黑色为未连接到网络或未供电"
+				"[扩展:此模组包中允许不按照特定结构布置控制器]"
+			]
+			dependencies: ["66B9593A43B1EE5D"]
+			hide: true
+			id: "495DCE62F106C5B8"
+			tasks: [{
+				id: "6C691CAB8922613E"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			title: "能源转化"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "其他能量不能直接通入AE网络"
+			description: ["需要接入能量接收器来转化电力"]
+			dependencies: ["5046F50FD0006026"]
+			hide: true
+			id: "3A550406875ED5E7"
+			tasks: [{
+				id: "5D6848D6AC5802CC"
+				type: "item"
+				item: "ae2:energy_acceptor"
+			}]
+		}
+		{
+			title: "能量存储"
+			icon: {
+				id: "ae2:energy_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: 5.0d
+			y: -4.0d
+			subtitle: "应用能源中自带的两种能量存储方案"
+			dependencies: ["300D8B53694CEA9F"]
+			hide: true
+			id: "6B405C6D6720902B"
+			tasks: [
+				{
+					id: "2B0CEB1E5895DA87"
+					type: "item"
+					item: {
+						id: "ae2:energy_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "2CE9DDFDDD2BB578"
+					type: "item"
+					item: {
+						id: "ae2:dense_energy_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "存储升级"
+			x: 19.0d
+			y: 2.0d
+			subtitle: "通过升级存储组件来获取一个磁盘中更高的存储数量"
+			dependencies: ["49585104E68D0681"]
+			hide: true
+			id: "42C3C9B05485239C"
+			tasks: [{
+				id: "2C07595A267B6E01"
+				type: "item"
+				item: "ae2:cell_component_4k"
+			}]
+		}
+		{
+			title: "终端访问"
+			x: 22.5d
+			y: 0.0d
+			subtitle: "使用终端来在网络的任意位置访问网络"
+			dependencies: ["02963D300D70DF23"]
+			id: "6B6D7AC4F6A28DB8"
+			tasks: [{
+				id: "3428C4DCA3638ED6"
+				type: "item"
+				item: "ae2:terminal"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 0.0d
+			subtitle: "照明面板可以使用电力进行照明，也是终端制作的必须材料"
+			dependencies: ["49585104E68D0681"]
+			id: "02963D300D70DF23"
+			tasks: [{
+				id: "4698F72E9D794C7E"
+				type: "item"
+				item: "ae2:semi_dark_monitor"
+			}]
+		}
+		{
+			title: "核心"
+			icon: "ae2:formation_core"
+			x: 20.0d
+			y: -2.0d
+			subtitle: "核心是制作一些网络交互硬件的必须材料"
+			dependencies: ["02963D300D70DF23"]
+			id: "677B2D036906A582"
+			tasks: [
+				{
+					id: "066DA0603237B563"
+					type: "item"
+					item: "ae2:formation_core"
+				}
+				{
+					id: "3BE2A297E3A375F5"
+					type: "item"
+					item: "ae2:annihilation_core"
+				}
+			]
+		}
+		{
+			title: "样板处理"
+			icon: "ae2:pattern_encoding_terminal"
+			x: 27.5d
+			y: -2.0d
+			subtitle: "自动化的基础"
+			description: ["可以用样板终端编写样板"]
+			dependencies: ["495DCE62F106C5B8"]
+			hide: true
+			id: "6BEAAFEA720DB22F"
+			tasks: [
+				{
+					id: "70B26FAEFED3E92E"
+					type: "item"
+					item: "ae2:pattern_encoding_terminal"
+				}
+				{
+					id: "23504B100A4DE54C"
+					type: "item"
+					item: "ae2:blank_pattern"
+				}
+			]
+		}
+		{
+			title: "自动合成"
+			icon: "ae2:crafting_accelerator"
+			x: 27.5d
+			y: -4.0d
+			subtitle: "使用至少一个并行处理单元和合成存储器就可以搭建一台CPU"
+			description: ["多个并行处理单元连接在一起的也是一个CPU，并行处理单元越多，在多线程的工作上就会更快"]
+			dependencies: ["6BEAAFEA720DB22F"]
+			id: "61E7E62E94727468"
+			tasks: [
+				{
+					id: "4BFF2574F958C527"
+					type: "item"
+					item: "ae2:crafting_accelerator"
+				}
+				{
+					id: "1463FE644286A965"
+					type: "item"
+					item: "ae2:1k_crafting_storage"
+				}
+			]
+		}
+		{
+			title: "接口"
+			icon: "ae2:pattern_provider"
+			x: 27.5d
+			y: -6.0d
+			subtitle: "使用这些接口可以让你更方便自动化"
+			dependencies: ["61E7E62E94727468"]
+			id: "6C37E8026FC6A9E4"
+			tasks: [
+				{
+					id: "05A60B35C9875266"
+					type: "item"
+					title: "接口:支持自定义输出物品到缓存列表，也支持将物品导入网络，支持部分升级卡"
+					item: "ae2:interface"
+				}
+				{
+					id: "2703484441BCE59D"
+					type: "item"
+					title: "样板供应接口:使用样板来自定义输出/入的配方，也有将物品导入网络的功能"
+					item: "ae2:pattern_provider"
+				}
+			]
+		}
+		{
+			title: "工作台，但是自动化"
+			x: 27.5d
+			y: -8.0d
+			subtitle: "分子装配室紧贴样板供应接口就可以实现样板合成"
+			dependencies: ["6C37E8026FC6A9E4"]
+			id: "033AC69E4640A8EE"
+			tasks: [{
+				id: "3E0F3688A3A3C17D"
+				type: "item"
+				item: "ae2:molecular_assembler"
+			}]
+		}
+		{
+			title: "美化"
+			x: 0.0d
+			y: -4.0d
+			subtitle: "使用线缆伪装板覆盖你的线缆"
+			dependencies: ["300D8B53694CEA9F"]
+			hide: true
+			id: "63DB8939025BE699"
+			tasks: [{
+				id: "32506E9E98000313"
+				type: "item"
+				item: {
+					id: "ae2:facade"
+					Count: 1b
+					tag: {
+						item: "minecraft:stone"
+					}
+				}
+			}]
+		}
+		{
+			title: "出入总线"
+			icon: "ae2:export_bus"
+			x: 27.5d
+			y: 2.0d
+			subtitle: "总线可以无视样板指令在网络中自动化输出或输入物品或液体"
+			dependencies: ["495DCE62F106C5B8"]
+			hide: true
+			id: "30267A12EC52A49D"
+			tasks: [
+				{
+					id: "6919F537633FB9A7"
+					type: "item"
+					title: "输入总线:往ME网络内输入物品或液体"
+					item: "ae2:import_bus"
+				}
+				{
+					id: "6048308385786C3C"
+					type: "item"
+					title: "输出总线:从ME网络中输出物品或液体"
+					item: "ae2:export_bus"
+				}
+			]
+		}
+		{
+			title: "P2P传输"
+			icon: "ae2:me_p2p_tunnel"
+			x: 27.5d
+			y: 4.0d
+			subtitle: "每种类型的P2P都可以在连接对应的端口后快速传输对应类型的物质"
+			description: ["使用内存卡来连接两个P2P端口"]
+			dependencies: ["30267A12EC52A49D"]
+			id: "3D44129582EDC391"
+			tasks: [
+				{
+					id: "2E0C801211754B89"
+					type: "item"
+					item: "ae2:me_p2p_tunnel"
+				}
+				{
+					id: "0ED889E1CA2992F2"
+					type: "item"
+					item: {
+						id: "ae2:memory_card"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "元件调试"
+			x: 25.0d
+			y: 2.0d
+			subtitle: "使用元件工作台可以给元件或其他物品调整黑/白名单"
+			dependencies: ["66B9593A43B1EE5D"]
+			hide: true
+			id: "320FBE560D218BD2"
+			tasks: [{
+				id: "44CFE60E4ADC5847"
+				type: "item"
+				item: "ae2:cell_workbench"
+			}]
+		}
+		{
+			title: "更好的终端"
+			x: 22.5d
+			y: -2.0d
+			subtitle: "在终端中嵌入合成台"
+			dependencies: ["6B6D7AC4F6A28DB8"]
+			hide: true
+			id: "12EA967F6DD4A680"
+			tasks: [{
+				id: "6A6A4D1E0E5ED0E2"
+				type: "item"
+				item: "ae2:crafting_terminal"
+			}]
+		}
+		{
+			title: "样板管理"
+			x: 25.0d
+			y: -6.0d
+			subtitle: "管理所有样板供应端口对应的槽位"
+			dependencies: ["6C37E8026FC6A9E4"]
+			hide: true
+			id: "755617BC0A855BB0"
+			tasks: [{
+				id: "05B48CADC89E1577"
+				type: "item"
+				item: "ae2:pattern_access_terminal"
+			}]
+		}
+		{
+			title: "数据转移"
+			x: 30.0d
+			y: 2.0d
+			subtitle: "将元件的数据快速转移至网络中，也可以相反操作"
+			dependencies: ["495DCE62F106C5B8"]
+			hide: true
+			id: "418D7E1815F36CD5"
+			tasks: [{
+				id: "0DBF7B7457CB0871"
+				type: "item"
+				item: "ae2:io_port"
+			}]
+		}
+		{
+			title: "升级拓展"
+			icon: "ae2:advanced_card"
+			x: 19.0d
+			y: 6.0d
+			subtitle: "使用这两种卡可以制作出不同的升级模块"
+			dependencies: ["42C3C9B05485239C"]
+			id: "70A85A4979B83E45"
+			tasks: [
+				{
+					id: "7250EDF741E8536F"
+					type: "item"
+					item: "ae2:basic_card"
+				}
+				{
+					id: "4701C49A42DE4341"
+					type: "item"
+					item: "ae2:advanced_card"
+				}
+			]
+		}
+		{
+			title: "网络安全"
+			x: 30.0d
+			y: -2.0d
+			subtitle: "安全终端可以让你设置网络的安全系统，最大的作用是可以认证无线终端"
+			dependencies: ["495DCE62F106C5B8"]
+			hide: true
+			id: "5A68259443B2F32A"
+			tasks: [{
+				id: "199EDFE888424A2E"
+				type: "item"
+				item: "ae2:security_station"
+			}]
+		}
+		{
+			x: 32.5d
+			y: -4.0d
+			subtitle: "定义每个人在网络中的权限"
+			description: [
+				"给所有人授权使用空白身份卡"
+				"给特定的人授权需要拿起身份卡蹲下右键验证身份"
+				"含有身份验证的用户不会被空白身份卡的验证影响"
+			]
+			dependencies: ["5A68259443B2F32A"]
+			id: "0B964897595F63A2"
+			tasks: [{
+				id: "1BB58414BD0227BC"
+				type: "item"
+				item: "ae2:biometric_card"
+			}]
+		}
+		{
+			x: 30.0d
+			y: 0.0d
+			subtitle: "物质聚合器可以将物质转化成物质球或奇点"
+			description: ["[扩展:在此整合包中可以开启复制矿物的发展线]"]
+			dependencies: ["495DCE62F106C5B8"]
+			hide: true
+			id: "669193645C33548B"
+			tasks: [{
+				id: "3D5E4237B8E4BA80"
+				type: "item"
+				item: "ae2:condenser"
+			}]
+		}
+		{
+			x: 32.5d
+			y: -2.0d
+			subtitle: "制作各种类型的染色球"
+			description: ["也可以直接充当物质枪的子弹"]
+			dependencies: ["669193645C33548B"]
+			hide: true
+			id: "0B8D551316DC1786"
+			tasks: [{
+				id: "629B66BD47D4DE70"
+				type: "item"
+				item: "ae2:matter_ball"
+			}]
+		}
+		{
+			x: 32.5d
+			y: 2.0d
+			subtitle: "量子环不可缺的材料"
+			dependencies: ["669193645C33548B"]
+			hide: true
+			id: "1131DA927B955ED8"
+			tasks: [{
+				id: "652732F639969302"
+				type: "item"
+				item: "ae2:singularity"
+			}]
+		}
+		{
+			title: "基础复制"
+			icon: "ae2:inscriber"
+			x: 32.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "小部分矿物复制"
+			description: [
+				"使用压印器消耗物质球可以实现红石粉和荧石粉的复制"
+				"[AELife扩展包]"
+			]
+			dependencies: [
+				"1131DA927B955ED8"
+				"0B8D551316DC1786"
+			]
+			hide: true
+			id: "40683A36CF8DEFB7"
+			tasks: [
+				{
+					id: "7134AE5D546FED82"
+					type: "item"
+					item: "minecraft:redstone"
+					only_from_crafting: true
+				}
+				{
+					id: "78733E67D2A7DCED"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+					only_from_crafting: true
+				}
+			]
+		}
+		{
+			title: "高级复制"
+			icon: "lazierae2:infuser"
+			x: 35.0d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "部分的矿物复制"
+			description: [
+				"使用物质注入器消耗物质球可以实现上述矿物复制"
+				"注意，这会消耗大量的电力"
+				"[AELife扩展包]"
+			]
+			dependencies: ["40683A36CF8DEFB7"]
+			id: "635A88AE2A16C984"
+			tasks: [
+				{
+					id: "36CCE909754F3679"
+					type: "item"
+					item: "minecraft:raw_iron"
+					only_from_crafting: true
+				}
+				{
+					id: "09BA1AE4182A910E"
+					type: "item"
+					item: "minecraft:raw_gold"
+					only_from_crafting: true
+				}
+				{
+					id: "562677259839A20A"
+					type: "item"
+					item: "minecraft:raw_copper"
+					only_from_crafting: true
+				}
+			]
+		}
+		{
+			title: "量子复制"
+			icon: "lazierae2:infuser"
+			x: 37.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "高级的矿物复制"
+			description: [
+				"使用物质注入器消耗物质球可以实现上述矿物复制"
+				"注意，这会消极大量的电力，下届合金需要钻石"
+				"[AELife扩展包]"
+			]
+			dependencies: ["635A88AE2A16C984"]
+			id: "3E86EA2B31EC1A2B"
+			tasks: [
+				{
+					id: "39001AEFE36DA137"
+					type: "item"
+					item: "minecraft:diamond_block"
+					only_from_crafting: true
+				}
+				{
+					id: "20236335A5632C14"
+					type: "item"
+					item: "minecraft:emerald_block"
+					only_from_crafting: true
+				}
+				{
+					id: "33222B8AB93D3263"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+					only_from_crafting: true
+				}
+			]
+		}
+		{
+			title: "网络染色"
+			x: 37.5d
+			y: -2.0d
+			subtitle: "给网络中的线缆染色"
+			description: ["不同颜色的线缆无法相连，默认色线缆可以与所有线缆连接；网络中面板的颜色也会跟随线缆颜色变化"]
+			dependencies: ["37ED3B5B24E6D72F"]
+			id: "37FD7D86ED160CDF"
+			tasks: [{
+				id: "22D0745A07F6BCEF"
+				type: "item"
+				item: {
+					id: "ae2:color_applicator"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 35.0d
+			y: -4.0d
+			subtitle: "远程的武器"
+			description: [
+				"消耗能量发射子弹，可以使用物质球或染色球作为子弹"
+				"物质球可以破坏方块，染色球则不能"
+			]
+			dependencies: ["0B8D551316DC1786"]
+			id: "2B18008D2ADA2104"
+			tasks: [{
+				id: "750201DEADCF25C8"
+				type: "item"
+				item: {
+					id: "ae2:matter_cannon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "染色球"
+			x: 35.0d
+			y: -2.0d
+			subtitle: "有不同颜色的染色球"
+			dependencies: ["0B8D551316DC1786"]
+			id: "37ED3B5B24E6D72F"
+			tasks: [{
+				id: "2AC33C9E0FC16702"
+				type: "item"
+				item: "ae2:white_paint_ball"
+			}]
+		}
+		{
+			title: "小爆炸"
+			x: 35.0d
+			y: 4.0d
+			subtitle: "迷你TNT也可以提供奇点所需的爆炸条件"
+			dependencies: ["1131DA927B955ED8"]
+			hide: true
+			id: "29EADCAC7CB0506D"
+			tasks: [{
+				id: "4A58D7DBC2E2DDE8"
+				type: "item"
+				item: "ae2:tiny_tnt"
+			}]
+		}
+		{
+			title: "电力武器"
+			x: 2.5d
+			y: 2.0d
+			subtitle: "充能手杖可以消耗能量无视护甲对敌人造成中等伤害"
+			dependencies: ["3D56131E2347B3B9"]
+			hide: true
+			id: "3269F951CAB4F7E3"
+			tasks: [{
+				id: "02AE0A528BE5FAFD"
+				type: "item"
+				item: "ae2:charged_staff"
+			}]
+		}
+		{
+			title: "量子变换"
+			x: 2.5d
+			y: 4.0d
+			subtitle: "魔法!这肯定是魔法!"
+			description: [
+				"右键方块的效果："
+				"矿石→锭(钻石、煤、红石、绿宝石除外)；圆石→石头；地狱岩→地狱砖；粘土块→4*红砖；沙子→玻璃；任何原木→木炭；冰->静止的水源，不扩散"
+				""
+				"蹲下右键方块的效果："
+				"水→冰；岩浆→黑曜石；地下的石头(包括几大废岩)→圆石；草方块→泥土；其他情况为点火"
+			]
+			dependencies: ["3269F951CAB4F7E3"]
+			hide: true
+			id: "7B30EC772C8AA759"
+			tasks: [{
+				id: "013D72BB9E0FB912"
+				type: "item"
+				item: "ae2:entropy_manipulator"
+			}]
+		}
+		{
+			title: "量子传输"
+			icon: "ae2:quantum_ring"
+			x: 37.5d
+			y: 2.0d
+			subtitle: "搭建量子环做到真正的量子传输"
+			description: [
+				"在一个量子环周围连接上一环(8个)量子连接仓即可"
+				"使用两个相同的量子缠绕态奇点并且两个量子环都通电就可以形成量子链接"
+				"在形成链接后，使用靠近中间的量子连接仓即可轻松传输32个频道，并且链接后还支持传输AE电力"
+			]
+			dependencies: ["13ABFC0551116A55"]
+			id: "04F20A86D5E75D1A"
+			tasks: [
+				{
+					id: "1F211BFEB58408B6"
+					type: "item"
+					item: "ae2:quantum_ring"
+				}
+				{
+					id: "553B2D0D91A26FDD"
+					type: "item"
+					item: "ae2:quantum_link"
+				}
+			]
+		}
+		{
+			title: "空间驱动"
+			x: 32.5d
+			y: 4.0d
+			subtitle: "在开启空间存储之前你必须含有空间IO端口来驱动空间存储元件"
+			description: ["空间IO端口放在空间塔结构的任意一面即可链接空间塔"]
+			dependencies: ["418D7E1815F36CD5"]
+			hide: true
+			id: "57D4B3FFB97437E0"
+			tasks: [{
+				id: "0593D5B260AB765E"
+				type: "item"
+				item: "ae2:spatial_io_port"
+			}]
+		}
+		{
+			title: "便宜的空间存储"
+			x: 42.5d
+			y: 0.0d
+			subtitle: "用它来制作空间存储元件"
+			description: ["将元件放入空间IO端口，运行一次后即可获得独一无二的元件ID"]
+			dependencies: ["392B0431528B364E"]
+			id: "7FC957C435496558"
+			tasks: [{
+				id: "1726FE36F5A83706"
+				type: "item"
+				item: "ae2:spatial_cell_component_2"
+			}]
+		}
+		{
+			title: "超巨型的空间存储"
+			x: 42.5d
+			y: -2.0d
+			dependencies: ["7FC957C435496558"]
+			id: "52B1579F581A7C8C"
+			tasks: [{
+				id: "4AAA2CA813C37626"
+				type: "item"
+				item: "ae2:spatial_cell_component_16"
+			}]
+		}
+		{
+			title: "末世的空间存储"
+			x: 42.5d
+			y: -4.0d
+			dependencies: ["52B1579F581A7C8C"]
+			id: "3A77A79E2A05A17C"
+			tasks: [{
+				id: "28029637181E759F"
+				type: "item"
+				item: "ae2:spatial_cell_component_128"
+			}]
+		}
+		{
+			title: "空间存储的基本"
+			x: 40.0d
+			y: 0.0d
+			subtitle: "规定空间存储的区域"
+			description: [
+				"空间柱：由空间塔构成的直线方块，对角不能使用空间塔相连"
+				"成型规则：需要两个空间柱包括的xyz轴包含存储元件所需的空间"
+				"判定规则："
+				"单个方块不形成空间柱结构"
+				"红色不发光空间柱则未通电"
+				"红色发光的空间住说明空间塔未成型"
+				"紫色发光的空间柱则通电且空间塔合格"
+			]
+			hide_dependency_lines: true
+			dependencies: ["57D4B3FFB97437E0"]
+			hide: true
+			id: "392B0431528B364E"
+			tasks: [{
+				id: "5905449C7E16024E"
+				type: "item"
+				item: "ae2:spatial_pylon"
+			}]
+		}
+		{
+			title: "擦腚!开机!"
+			x: 45.0d
+			y: 0.0d
+			subtitle: "使用红石信号激活空间IO端口"
+			description: [
+				"注意你所消耗的电力是否在可承受范围内"
+				""
+			]
+			dependencies: ["7FC957C435496558"]
+			id: "2C007C7F10A9FF93"
+			tasks: [{
+				id: "1C4DA14F37D91F7C"
+				type: "dimension"
+				title: "硬盘空间"
+				icon: "ae2:spatial_storage_cell_128"
+				disable_toast: true
+				dimension: "ae2:spatial_storage"
+			}]
+		}
+		{
+			title: "提高效率"
+			icon: "ae2:creative_energy_cell"
+			x: 42.5d
+			y: 2.0d
+			subtitle: "你的空间塔运行也许能更加省电"
+			description: ["在空间塔的结构范围内拥有更多的空间柱就可以提高空间塔的能源利用效率，100%为最高效率"]
+			dependencies: ["7FC957C435496558"]
+			id: "5A2A3B9D1AE62433"
+			tasks: [{
+				id: "0A91CEDE3B800219"
+				type: "checkmark"
+				title: "我知道了"
+			}]
+		}
+		{
+			title: "好奇心还是不小心?"
+			icon: "minecraft:spectral_arrow"
+			x: 47.5d
+			y: 0.0d
+			subtitle: "你真的能逃走吗?"
+			description: [
+				"除去复活来离开空间的方法："
+				"1.在16^3以上的硬盘中创建地狱门来逃脱"
+				"2.空间IO驱动器区块加载，并含有自动释放空间装置"
+				"3.多人模式中其他玩家释放该存储元件"
+			]
+			dependencies: ["2C007C7F10A9FF93"]
+			hide: true
+			hide_text_until_complete: true
+			id: "36316CFBEA284EDD"
+			tasks: [{
+				id: "70110CD4727FADD1"
+				type: "dimension"
+				title: "回到原来的世界"
+				icon: "minecraft:grass_block"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -3.0d
+			subtitle: "使用它来高效完成压印器的一部分工作"
+			description: ["[LazyAE扩展]"]
+			dependencies: ["4C56C07ADA3EBEE8"]
+			hide: true
+			id: "0998143992EADE17"
+			tasks: [{
+				id: "7A6DAC9317714A92"
+				type: "item"
+				item: "lazierae2:aggregator"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -4.5d
+			subtitle: "使用它来高效完成压印器的一部分工作"
+			description: ["[LazyAE扩展]"]
+			dependencies: ["4C56C07ADA3EBEE8"]
+			hide: true
+			id: "5F58FF79EB1D4A51"
+			tasks: [{
+				id: "6E52FAED58D0C675"
+				type: "item"
+				item: "lazierae2:etcher"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -4.0d
+			subtitle: "使用它来高效完成压印器的一部分工作"
+			description: ["[LazyAE扩展]"]
+			dependencies: ["4C56C07ADA3EBEE8"]
+			hide: true
+			id: "724393E9C8093AC3"
+			tasks: [{
+				id: "33ED85C476CAEE24"
+				type: "item"
+				item: "lazierae2:grinder"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -4.0d
+			subtitle: "更多的高级配方在这里"
+			description: [
+				"[LazyAE扩展]"
+				"[拓展:提供复制高级矿物的能力]"
+			]
+			dependencies: ["4C56C07ADA3EBEE8"]
+			hide: true
+			id: "2669002ABAF4CC4E"
+			tasks: [{
+				id: "5F408E20C9DE71A7"
+				type: "item"
+				item: "lazierae2:infuser"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -3.0d
+			subtitle: "快捷通过检查内部存储来发起制作方案"
+			description: ["[LazyAE扩展]"]
+			dependencies: ["4C56C07ADA3EBEE8"]
+			hide: true
+			id: "086433E46BF852A4"
+			tasks: [{
+				id: "173A97034104E12A"
+				type: "item"
+				item: "lazierae2:requester"
+			}]
+		}
+		{
+			title: "信号断路"
+			x: 4.0d
+			y: -5.5d
+			subtitle: "触发总线检测红石信号来决定线路是否进行链接"
+			dependencies: ["300D8B53694CEA9F"]
+			id: "1879D82241B3019B"
+			tasks: [{
+				id: "6460B6FB4FC69469"
+				type: "item"
+				item: "ae2:toggle_bus"
+			}]
+		}
+		{
+			title: "智能发信"
+			x: 1.0d
+			y: -5.5d
+			subtitle: "发信器通过检测网络数据来决定发送的红石信号"
+			dependencies: ["300D8B53694CEA9F"]
+			id: "77B81879E501E329"
+			tasks: [{
+				id: "22E17785B483D1A1"
+				type: "item"
+				item: "ae2:level_emitter"
+			}]
+		}
+		{
+			title: "网络管理员"
+			x: 7.5d
+			y: -4.0d
+			subtitle: "通过使用网络工具来监测网络内部的设备，并且能暂时透视伪装板"
+			dependencies: ["2432C4A12E2853FA"]
+			id: "38E66E2E0CC12E91"
+			tasks: [{
+				id: "0A2CA7A9CCF340C5"
+				type: "item"
+				item: "ae2:network_tool"
+			}]
+		}
+		{
+			title: "两极反转"
+			x: 7.5d
+			y: -2.0d
+			subtitle: "通过使用扳手来旋转机器的方向"
+			dependencies: ["49D05A0BF186B2F3"]
+			hide: true
+			id: "2432C4A12E2853FA"
+			tasks: [{
+				id: "4063C042A0492C3B"
+				type: "item"
+				item: "ae2:certus_quartz_wrench"
+			}]
+		}
+		{
+			title: "核能"
+			x: 11.5d
+			y: 6.0d
+			shape: "octagon"
+			subtitle: "通过使用铀来大量发电"
+			description: ["[大型反应堆系列拓展]"]
+			dependencies: ["753730BED9A23823"]
+			hide: true
+			id: "50FADB0A51884062"
+			tasks: [{
+				id: "41D69210436B633A"
+				type: "item"
+				item: "biggerreactors:uranium_ingot"
+			}]
+		}
+		{
+			title: "通量能源"
+			x: 8.5d
+			y: 6.0d
+			shape: "octagon"
+			subtitle: "使用通量网络来进行能量存储或快速运输"
+			description: ["[通量网络拓展]"]
+			dependencies: ["753730BED9A23823"]
+			hide: true
+			id: "6F08AD0531F34B41"
+			tasks: [{
+				id: "1D6D7A883460243B"
+				type: "item"
+				item: "fluxnetworks:flux_dust"
+			}]
+		}
+		{
+			title: "指定显示"
+			x: 25.0d
+			y: 4.0d
+			subtitle: "在元件工作台中编辑显示元件可以指定终端的显示物件"
+			dependencies: ["320FBE560D218BD2"]
+			hide: true
+			id: "4577DC16A8FA5142"
+			tasks: [{
+				id: "2438F559E712B9D3"
+				type: "item"
+				item: "ae2:view_cell"
+			}]
+		}
+		{
+			title: "时间流动"
+			x: 42.5d
+			y: 4.0d
+			subtitle: "激活空间锚可以使其所在的区块保持加载"
+			dependencies: ["5A2A3B9D1AE62433"]
+			id: "77A63B5790CC825E"
+			tasks: [{
+				id: "1A807BB7C22F1FFA"
+				type: "item"
+				item: "ae2:spatial_anchor"
+			}]
+		}
+		{
+			title: "智能测光"
+			x: 2.5d
+			y: -8.0d
+			subtitle: "光亮探测器会以周围的光照强度来输出红石信号"
+			dependencies: ["1DBEED115478D7C3"]
+			hide: true
+			id: "0886F4B1EFEB71E7"
+			tasks: [{
+				id: "03C043C92ACFB52D"
+				type: "item"
+				item: "ae2:light_detector"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 5.5d
+			subtitle: "为设备添加红石控制的支持"
+			dependencies: ["70A85A4979B83E45"]
+			hide: true
+			id: "7D6DCF36EB70FCE2"
+			tasks: [{
+				id: "223C71134B01B651"
+				type: "item"
+				item: "ae2:redstone_card"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 4.5d
+			subtitle: "可以增大某些终端的记忆容量"
+			dependencies: ["70A85A4979B83E45"]
+			hide: true
+			id: "427D29545169E15D"
+			tasks: [{
+				id: "4ABCDEC599C0484C"
+				type: "item"
+				item: "ae2:capacity_card"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 6.5d
+			subtitle: "自动销毁存储元件内的物品"
+			dependencies: ["70A85A4979B83E45"]
+			hide: true
+			id: "074BF08DAC29659B"
+			tasks: [{
+				id: "50C3D4EF69E1E067"
+				type: "item"
+				item: "ae2:void_card"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 7.5d
+			subtitle: "在支持的终端设备上自动合成指定的物品"
+			dependencies: ["70A85A4979B83E45"]
+			hide: true
+			id: "1FE005CB1E0488A8"
+			tasks: [{
+				id: "2FA82988BFDC8F6A"
+				type: "item"
+				item: "ae2:crafting_card"
+			}]
+		}
+		{
+			x: 20.5d
+			y: 5.5d
+			subtitle: "加快机器或可用终端的运行速度"
+			dependencies: ["70A85A4979B83E45"]
+			hide: true
+			id: "32C71C60BE1CC665"
+			tasks: [{
+				id: "4ED0C7CC24A773AD"
+				type: "item"
+				item: "ae2:speed_card"
+			}]
+		}
+		{
+			x: 20.5d
+			y: 6.5d
+			subtitle: "允许绕过记忆体的NBT参数判断输出/入物"
+			dependencies: ["70A85A4979B83E45"]
+			hide: true
+			id: "19E8122E31BC68A2"
+			tasks: [{
+				id: "298C331CBAEB26A5"
+				type: "item"
+				item: "ae2:fuzzy_card"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 7.5d
+			subtitle: "反转黑白名单"
+			dependencies: ["70A85A4979B83E45"]
+			hide: true
+			id: "50E3436997D21EC3"
+			tasks: [{
+				id: "06484E6DE04711C7"
+				type: "item"
+				item: "ae2:inverter_card"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 4.5d
+			subtitle: "扩容支持设备的电容"
+			dependencies: ["70A85A4979B83E45"]
+			hide: true
+			id: "791EA07B68449BCF"
+			tasks: [{
+				id: "55C003BE56A9F9E3"
+				type: "item"
+				item: "ae2:energy_card"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 8.0d
+			subtitle: "允许安装了均分卡的存储元件组成存储阵列"
+			dependencies: ["70A85A4979B83E45"]
+			hide: true
+			id: "7806545C342B70EA"
+			tasks: [{
+				id: "37F930C6E0F89DF1"
+				type: "item"
+				item: "ae2:equal_distribution_card"
+			}]
+		}
+		{
+			x: 25.0d
+			y: -4.0d
+			subtitle: "放置在CPU结构的任意位置可以显示CPU正在执行的任务"
+			dependencies: ["61E7E62E94727468"]
+			id: "28DDAD7936A6269F"
+			tasks: [{
+				id: "18439FF2FC574EAD"
+				type: "item"
+				item: "ae2:crafting_monitor"
+			}]
+		}
+		{
+			title: "无线网络"
+			x: 30.0d
+			y: -4.0d
+			subtitle: "使用无线访问点来激活网络的无线传输功能"
+			dependencies: ["5A68259443B2F32A"]
+			hide: true
+			id: "759F5BEA4E82616B"
+			tasks: [{
+				id: "7AFBEB0D521B8716"
+				type: "item"
+				item: "ae2:wireless_access_point"
+			}]
+		}
+		{
+			title: "空间"
+			x: 20.0d
+			y: -4.0d
+			subtitle: "福鲁伊克斯珍珠是制作空间网络必备的材料"
+			dependencies: ["677B2D036906A582"]
+			hide: true
+			id: "61ED6DBD05453B90"
+			tasks: [{
+				id: "79B88B085BE96A4B"
+				type: "item"
+				item: "ae2:fluix_pearl"
+			}]
+		}
+		{
+			title: "高级玻璃"
+			x: 12.5d
+			y: 2.0d
+			subtitle: "大部分面板都需要石英玻璃制作"
+			dependencies: ["16829B0462A63E6A"]
+			id: "0FD7EF5ABB3418C4"
+			tasks: [{
+				id: "0571CAE6BC5BBF5A"
+				type: "item"
+				item: "ae2:quartz_glass"
+			}]
+		}
+		{
+			title: "移动终端"
+			x: 30.0d
+			y: -6.0d
+			subtitle: "使用无线终端来远程连接网络"
+			dependencies: ["759F5BEA4E82616B"]
+			id: "47874C0FF40030C6"
+			tasks: [{
+				id: "63BECA7754AE4F30"
+				type: "item"
+				item: "ae2:wireless_terminal"
+			}]
+		}
+		{
+			title: "无线加强"
+			icon: "ae2:wireless_booster"
+			x: 30.0d
+			y: -8.0d
+			subtitle: "更多高级的无线设备"
+			dependencies: ["47874C0FF40030C6"]
+			hide: true
+			id: "0AD259DB64271B94"
+			tasks: [
+				{
+					id: "7D0C78A22FA38939"
+					type: "item"
+					title: "无线增幅器:放入无线访问点来增加无线传输距离"
+					item: "ae2:wireless_booster"
+				}
+				{
+					id: "3587178C78F0B1DF"
+					type: "item"
+					title: "无线合成终端:与合成终端功能一致"
+					item: "ae2:wireless_crafting_terminal"
+				}
+			]
+		}
+		{
+			title: "传输节点"
+			icon: "fluxnetworks:flux_point"
+			x: 8.5d
+			y: 8.0d
+			shape: "octagon"
+			subtitle: "使用网络节点就可以实现电力传输"
+			description: [
+				"输入点=将能量吸入能量网络"
+				"接入点=从能量网络中取出能量"
+				"首次使用需要先创建网络，相同网络的设备才能互通"
+			]
+			dependencies: ["6F08AD0531F34B41"]
+			id: "34EDDDC640B12914"
+			tasks: [
+				{
+					id: "1AC9BC9044232E45"
+					type: "item"
+					item: "fluxnetworks:flux_plug"
+				}
+				{
+					id: "3936FFD95339F7CE"
+					type: "item"
+					item: "fluxnetworks:flux_point"
+				}
+			]
+		}
+		{
+			title: "能量存储"
+			icon: "fluxnetworks:basic_flux_storage"
+			x: 8.5d
+			y: 10.0d
+			shape: "octagon"
+			subtitle: "使用能量存储器可以在能量网络中大量存储能量"
+			dependencies: ["34EDDDC640B12914"]
+			id: "16967B61CBF4F1F4"
+			tasks: [
+				{
+					id: "586D612FFD9C170F"
+					type: "item"
+					item: "fluxnetworks:basic_flux_storage"
+				}
+				{
+					id: "4C7C4A652064BDB2"
+					type: "item"
+					item: "fluxnetworks:herculean_flux_storage"
+				}
+				{
+					id: "41B9DC6EE3ACD122"
+					type: "item"
+					item: "fluxnetworks:gargantuan_flux_storage"
+				}
+			]
+		}
+		{
+			title: "清洁能源"
+			icon: "biggerreactors:reactor_terminal"
+			x: 11.5d
+			y: 8.0d
+			subtitle: "稳定的核电"
+			description: [
+				"反应堆搭建："
+				"反应堆的棱边一定是反应堆外壳，在反应堆的中心必须有反应燃料棒，燃料棒的顶部需要一个反应堆控制棒，周围还需要至少一个控制器、访问端口、能量端口，最小的反应堆包括外壳是3x4x3，且反应堆不会爆炸"
+				""
+				"反应堆的冷却："
+				"在较大形的反应堆中，可以放置一些方块或者液体在燃料棒旁边来帮助它散热，在一定情况下，反应堆工作时温度越低效率会越高"
+			]
+			dependencies: ["50FADB0A51884062"]
+			id: "05B027586C65B646"
+			tasks: [
+				{
+					id: "6CF38FEA23A97E8F"
+					type: "item"
+					title: "反应堆终端：用于管理和监视反应堆的运行情况"
+					item: "biggerreactors:reactor_terminal"
+				}
+				{
+					id: "3515C3764F6A0653"
+					type: "item"
+					title: "反应堆访问端口：用于输入燃料和输出燃烧后的蓝晶，也可以直接将多余的整数燃料直接输出[一个铀锭或者蓝钚锭提供1000mB燃料]"
+					item: "biggerreactors:reactor_access_port"
+				}
+				{
+					id: "2FEBA606859C27F9"
+					type: "item"
+					title: "反应堆红石接口:高度自定义检测反应堆的数据来输出红石信号，也可以接收红石信号来控制反应堆"
+					item: "biggerreactors:reactor_redstone_port"
+				}
+				{
+					id: "5C044AA92B574CAF"
+					type: "item"
+					title: "反应堆玻璃：可以填充除了棱边外的外壳部分空缺"
+					item: "biggerreactors:reactor_glass"
+				}
+				{
+					id: "4F7A2B1EB00E47B8"
+					type: "item"
+					title: "反应堆控制棒：在反应堆顶壳放置，用于控制某个燃料棒的燃烧速率"
+					item: "biggerreactors:reactor_control_rod"
+				}
+				{
+					id: "32B1290E2E1F4086"
+					type: "item"
+					title: "反应堆燃料棒：用于存储和反应燃料，一个燃料棒可以提供4000mB的容量，燃料棒中的燃料越多择反应越快"
+					item: "biggerreactors:reactor_fuel_rod"
+				}
+				{
+					id: "49E8D66CAA6B7BE3"
+					type: "item"
+					title: "反应堆能量接口：使用它可以输出反应堆产生的能源"
+					item: "biggerreactors:reactor_power_tap"
+				}
+				{
+					id: "53B69E9BF4326DFC"
+					type: "item"
+					title: "反应堆外壳：搭建反应堆框架的必备方块，反应堆的棱边一定要用反应堆外壳搭建，其他面可以选择性填充"
+					item: "biggerreactors:reactor_casing"
+				}
+			]
+		}
+		{
+			title: "更高效的利用"
+			icon: "biggerreactors:turbine_terminal"
+			x: 11.5d
+			y: 12.0d
+			subtitle: "涡轮机发电的效率会比直接使用反应堆发电高许多"
+			description: [
+				"反应出蓝晶之后你可以制作涡轮机，外部构造和反应堆相似，但是内部替换为转轴、转子和线圈"
+				""
+				"反应堆的蒸发模式："
+				"在反应堆转换为蒸发模式后，往反应堆输入水会转化为水蒸气，水蒸气输入涡轮机中，即可使涡轮机转动并产出水"
+			]
+			dependencies: ["40C0B5CB40DED06C"]
+			hide: true
+			id: "21D1FBD7B933F156"
+			tasks: [
+				{
+					id: "14857CD2A1635452"
+					type: "item"
+					title: "涡轮机终端:用于管理和监视涡轮机的运行情况"
+					item: "biggerreactors:turbine_terminal"
+				}
+				{
+					id: "523F2AA9599E572E"
+					type: "item"
+					title: "涡轮机冷却端口：用于输入或输出液体"
+					item: "biggerreactors:turbine_fluid_port"
+				}
+				{
+					id: "6455B70754A26E82"
+					type: "item"
+					title: "涡轮外壳:布局与反应堆类似"
+					item: "biggerreactors:turbine_casing"
+				}
+				{
+					id: "313C4E7BBEFE4827"
+					type: "item"
+					title: "涡轮玻璃:用法与反应堆类似"
+					item: "biggerreactors:turbine_glass"
+				}
+				{
+					id: "534CD529D991EFE1"
+					type: "item"
+					title: "涡轮机转子轴承：置于涡轮机地面和顶面，用于连接涡轮机转轴"
+					item: "biggerreactors:turbine_rotor_bearing"
+				}
+				{
+					id: "23845D1432F00209"
+					type: "item"
+					title: "涡轮机转轴：放置在涡轮机的中心，连接叶片"
+					item: "biggerreactors:turbine_rotor_shaft"
+				}
+				{
+					id: "39CA7DCDE1938AA1"
+					type: "item"
+					title: "涡轮机叶片：将叶片安置在转轴周围可以使用蒸汽带动转轴"
+					item: "biggerreactors:turbine_rotor_blade"
+				}
+				{
+					id: "32EA70AADF5B5975"
+					type: "item"
+					title: "线圈[铁块示例]:安装在涡轮转轴的最底部一层，将动力转化为电力"
+					item: "minecraft:iron_block"
+				}
+				{
+					id: "1919FF33F54F16C9"
+					type: "item"
+					title: "反应堆冷却端口：替换能量接口来使反应堆更改为蒸发模式"
+					item: "biggerreactors:reactor_coolant_port"
+				}
+				{
+					id: "6D0C875AF1931C60"
+					type: "item"
+					title: "反应堆冷却液棒:增加反应堆液体容量，一个冷却液棒可以增加10B的容量"
+					item: "biggerreactors:reactor_manifold"
+				}
+			]
+		}
+		{
+			title: "废料再处理"
+			x: 11.5d
+			y: 10.0d
+			subtitle: "将反应后得到的蓝晶转化为蓝钚锭再次作为燃料使用"
+			dependencies: ["05B027586C65B646"]
+			hide: true
+			id: "40C0B5CB40DED06C"
+			tasks: [{
+				id: "22514FE1E4BA435E"
+				type: "item"
+				item: "biggerreactors:cyanite_reprocessor"
+			}]
+		}
+		{
+			x: 50.0d
+			y: 0.0d
+			subtitle: "你已经完成了最复杂的部分"
+			dependencies: ["36316CFBEA284EDD"]
+			id: "55AAED274CBBBF6E"
+			tasks: [{
+				id: "1D6BFB1AB02FA623"
+				type: "checkmark"
+				title: "结束了"
+			}]
+		}
+		{
+			title: "成型破坏"
+			icon: "ae2:formation_plane"
+			x: 22.5d
+			y: -4.0d
+			subtitle: "使用接口来处理外部方块"
+			description: [
+				"破坏面板可以提取外部的掉落物和破坏方块"
+				"成型面板可以向外部放置方块或者丢下掉落物"
+			]
+			dependencies: ["12EA967F6DD4A680"]
+			id: "66A09A3290BC78C2"
+			tasks: [
+				{
+					id: "2D3E9C39BC550F20"
+					type: "item"
+					item: "ae2:annihilation_plane"
+				}
+				{
+					id: "1DD6CC5DAB48A7E1"
+					type: "item"
+					item: "ae2:formation_plane"
+				}
+			]
+		}
+	]
+}
